@@ -1,0 +1,35 @@
+{
+  "name": "curso-node",
+  "version": "1.0.0",
+  "description": "Curso de Node.js desde cero",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernargdev/curso-node-js.git"
+  },
+  "keywords": [
+    "curso",
+    "node",
+    "javascript",
+    "backend",
+    "js"
+  ],
+  "author": "Fernando Angel Rodríguez González - fernargdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernargdev/curso-node-js/issues"
+  },
+  "homepage": "https://github.com/fernargdev/curso-node-js#readme",
+  "dependencies": {
+    "picocolors": "1.0.0"
+  },
+  "devDependencies": {
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
