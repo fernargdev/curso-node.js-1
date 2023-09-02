@@ -1,0 +1,47 @@
+### Recuperar todas las peliculas
+GET http://localhost:3000/movies
+
+### Recuperar una pelicula por id
+GET http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### Recuperar una pelicula por un genero
+GET http://localhost:3000/movies?genre=action
+
+### Crear una pelicula con POST
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "sql": "SELECT *  FROM users",
+    "title": "The Godfather",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "duration": 175,
+    "poster": "https://www.imdb.com/title/tt0068646/mediaviewer/rm746868224/",
+    "genre": ["Crime", "Drama"]
+}
+
+### Probar validaciones
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title": 1,
+    "year": "pepote"
+}
+
+### Actualizar una pelicula
+PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "id": "1234",
+    "title": "Animatrix", 
+    "year": 1999
+}
+
+### Borrar una pelicula
+DELETE http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+
